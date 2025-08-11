@@ -1,0 +1,177 @@
+/* Remove as margens e paddings padrão de todos os elementos e define o box-sizing para incluir bordas e padding no tamanho total */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-size: 25px; /* tamanho base da fonte */
+    margin: auto; /* centraliza automaticamente em alguns casos */
+    padding: auto; /* aqui não afeta muito pois padding:auto não é comum */
+    background-color: black; /* fundo preto */
+}
+
+/*----------------------------------*/
+/* HEADER */
+header {
+    display: flex; /* usa flexbox para organizar os elementos */
+    justify-content: center; /* centraliza horizontalmente */
+    justify-content: space-between; /* distribui os itens nos cantos (sobrescreve o center anterior) */
+    margin: 50px; /* espaçamento externo */
+    padding: 5px; /* espaçamento interno */
+}
+
+/* Título dentro do header */
+.titulo_header {
+    font-size: 70px;
+}
+
+/* Contêiner dos botões de fonte */
+.fontBotao {
+    text-align: center;
+    margin-top: 25px;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Botão para aumentar fonte */
+.botaoAumenta {
+    padding: 15px;
+    margin: 10px;
+    border: 5px;
+    border-radius: 60px; /* deixa o botão arredondado */
+    text-decoration: #ffff; /* aqui não afeta, pois text-decoration espera underline, none, etc. */
+    background-color: blue; /* fundo azul */
+}
+
+/* Botão para diminuir fonte */
+.botaoDiminui {
+    padding: 15px;
+    margin: 10px;
+    border: 5px;
+    border-radius: 60px;
+    text-decoration: #ffff;
+    background-color: red; /* fundo vermelho */
+}
+
+/*----------------------------------*/
+/* SESSÃO LEITURA */
+.leitura {
+    /* Adiciona uma camada escura sobre a imagem de fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/prog2.jpg);
+    background-size: cover; /* cobre toda a área */
+    background-repeat: no-repeat; /* não repete */
+    background-attachment: fixed; /* imagem fixa no fundo ao rolar */
+    margin: auto;
+    padding: 350px; /* espaçamento interno grande */
+}
+
+/* Contêiner do botão de leitura */
+.conteiner_butao {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+}
+
+/* Estilo do botão de leitura */
+.butao_leitura {
+    padding: 30px;
+    margin: 30px;
+    font-size: 1em;
+    border: 5px;
+    border-radius: 60px;
+    text-decoration: black;
+    background-color: #ffff; /* fundo branco */
+}
+
+/*----------------------------------*/
+/* TEXTO DO BOTÃO */
+.conteiner_texto {
+    margin: auto;
+    padding: auto;
+}
+
+.leituraTitulo {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.leituraTexto {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*----------------------------------*/
+/* FOOTER */
+footer {
+    background-color: grey; /* fundo cinza */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; /* sobrescreve o center */
+    padding: 20px;
+    padding-top: 35px;
+}
+
+.titulo_footer {
+    margin: auto;
+    padding: auto;
+    font-size: 70px;
+}
+
+/*----------------------------------*/
+/* BLOCO N1 */
+.n1 {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.n1_titulo {
+    text-align: left;
+}
+
+.nomes {
+    text-align: left;
+}
+
+/*----------------------------------*/
+/* BLOCO N2 */
+.n2 {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.n2_titulo1 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.n2_titulo2 {
+    margin: 5px;
+    padding: 5px;
+}
+
+/*----------------------------------*/
+/* BLOCO N3 */
+.n3 {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.n3_titulo {
+    margin: 5px;
+    padding: 5px;
+    font-size: 40px;
+}
+
+.n3_link {
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none; /* remove o sublinhado */
+    color: red; /* texto vermelho */
+}

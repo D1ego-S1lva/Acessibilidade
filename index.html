@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progamando</title>
+
+    <!-- Importa o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Título do cabeçalho -->
+        <h1 class="titulo_header">3 Bimestre</h1><br>
+
+        <!-- Botões para aumentar e diminuir a fonte -->
+        <div class="fontBotao">        
+            <button class="botaoAumenta" onclick="aumentarFonte()">Aumentar Fonte</button>
+            <button class="botaoDiminui" onclick="diminuirFonte()">Diminuir Fonte</button>
+        </div>
+
+        <!-- Script para controlar o tamanho da fonte -->
+        <script>
+            function aumentarFonte() {
+                const body = document.body; // pega o body da página
+                let estiloAtual = window.getComputedStyle(body).fontSize; // obtém tamanho da fonte atual
+                let tamanhoAtual = parseFloat(estiloAtual); // converte para número
+
+                // Limite máximo de 30px
+                if (tamanhoAtual < 30) {
+                    let novoTamanho = tamanhoAtual + 2; // aumenta 2px
+                    body.style.fontSize = novoTamanho + "px"; // aplica novo tamanho
+                }
+            }
+
+            function diminuirFonte() {
+                const body = document.body; // pega o body da página
+                let estiloAtual = window.getComputedStyle(body).fontSize; // obtém tamanho da fonte atual
+                let tamanhoAtual = parseFloat(estiloAtual); // converte para número
+
+                // Limite mínimo de 20px (pode trocar para 10px se quiser menor)
+                if (tamanhoAtual > 20) {
+                    let novoTamanho = tamanhoAtual - 2; // diminui 2px
+                    body.style.fontSize = novoTamanho + "px"; // aplica novo tamanho
+                }
+            }
+        </script>
+    </header>
+
+    <!-- Seção de leitura -->
+    <section class="leitura">
+        <!-- Botão para ativar a leitura do texto -->
+        <div class="conteiner_butao">
+            <button class="butao_leitura" onclick="lerTexto()"> Ler Texto </button><br> 
+        </div>
+        
+        <!-- Texto que será lido -->
+        <div class="conteiner_texto">
+            <h2 class="leituraTitulo">Como abrir uma pasta no Windows</h2>
+            <p class="leituraTexto" id="textoFixado">
+                Para abrir uma pasta no Windows, localize o ícone dela na Área de Trabalho ou no 
+                Explorador de Arquivos. Dê dois cliques rápidos com o botão esquerdo do mouse sobre o ícone,
+                e a pasta será aberta, mostrando todos os arquivos e subpastas que ela contém.
+            </p>
+        </div>
+
+        <!-- Script que faz o navegador "falar" o texto -->
+        <script>
+            function lerTexto() {
+                let texto = document.getElementById("textoFixado").innerText; // pega o texto do parágrafo
+                let fala = new SpeechSynthesisUtterance(texto); // cria objeto de fala com o texto
+                fala.lang = "pt-BR"; // define idioma português do Brasil
+                speechSynthesis.speak(fala); // executa a fala
+            }
+        </script>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <!-- Título do rodapé -->
+        <h1 class="titulo_footer">3 Bimestre</h1>
+
+        <!-- Lista de nomes do grupo -->
+        <div class="n1">
+            <h1 class="n1_titulo">Grupo:</h1>
+            <div class="nomes">
+                <h2>Diego</h2>
+                <h2>Thiago</h2>
+                <h2>Gabriel Vinicisu</h2>
+                <h2>Nicolly</h2>
+                <h2>Heloisa</h2>
+            </div>
+        </div>
+
+        <!-- Informação da série -->
+        <div class="n2">
+            <h1 class="n2_titulo1">Serie:</h1>
+            <h2 class="n2_titulo2">3B</h2>
+        </div>
+
+        <!-- Link do GitHub -->
+        <div class="n3">
+            <h1 class="n3_titulo">GITHUB</h1>
+            <a class="n3_link" href="">GitHub</a>
+        </div>
+    </footer>
+ 
+</body>
+</html>
