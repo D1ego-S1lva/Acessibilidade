@@ -25,6 +25,7 @@ header {
 
 /* Título dentro do header */
 .titulo_header {
+    color: #ffff;
     font-size: 70px;
 }
 
@@ -81,7 +82,7 @@ header {
     font-size: 1em;
     border: 5px;
     border-radius: 60px;
-    text-decoration: black;
+    text-decoration: #ffff;
     background-color: #ffff; /* fundo branco */
 }
 
@@ -93,12 +94,14 @@ header {
 }
 
 .leituraTitulo {
+    color: #ffff;
     margin: 20px;
     padding: 20px;
     text-align: center;
 }
 
 .leituraTexto {
+    color: #ffff;
     margin: 5px;
     padding: 5px;
     text-align: center;
@@ -116,6 +119,7 @@ footer {
 }
 
 .titulo_footer {
+    color: #ffff;
     margin: auto;
     padding: auto;
     font-size: 70px;
@@ -124,33 +128,40 @@ footer {
 /*----------------------------------*/
 /* BLOCO N1 */
 .n1 {
+    color: #ffff;
     margin: auto;
     padding: auto;
     text-align: center;
 }
 
 .n1_titulo {
+    color: #ffff;
     text-align: left;
 }
 
 .nomes {
+    color: #ffff;
     text-align: left;
 }
+
 
 /*----------------------------------*/
 /* BLOCO N2 */
 .n2 {
+    color: #ffff;
     margin: auto;
     padding: auto;
     text-align: center;
 }
 
 .n2_titulo1 {
+    color: #ffff;
     margin: 5px;
     padding: 5px;
 }
 
 .n2_titulo2 {
+    color: #ffff;
     margin: 5px;
     padding: 5px;
 }
@@ -158,12 +169,14 @@ footer {
 /*----------------------------------*/
 /* BLOCO N3 */
 .n3 {
+    color: #ffff;
     margin: auto;
     padding: auto;
     text-align: center;
 }
 
 .n3_titulo {
+    color: black;    
     margin: 5px;
     padding: 5px;
     font-size: 40px;
